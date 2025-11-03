@@ -1,0 +1,5 @@
+/home/navid/Vehicle-Traffic-Control/build/Desktop-Debug/CMakeFiles/MapView.dir
+/home/navid/Vehicle-Traffic-Control/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/navid/Vehicle-Traffic-Control/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/navid/Vehicle-Traffic-Control/build/Desktop-Debug/CMakeFiles/MapView_autogen_timestamp_deps.dir
+/home/navid/Vehicle-Traffic-Control/build/Desktop-Debug/CMakeFiles/MapView_autogen.dir

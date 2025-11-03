@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Vehicle-Traffic-Control",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "MapView::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MapView-Debug-cb2d7c032427fcd5d061.json",
+					"name" : "MapView",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MapView_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MapView_autogen-Debug-49f6de3fa3932d4680da.json",
+					"name" : "MapView_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MapView_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MapView_autogen_timestamp_deps-Debug-ccb006a1935b1b92f27e.json",
+					"name" : "MapView_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/navid/Vehicle-Traffic-Control/build/Desktop-Debug",
+		"source" : "/home/navid/Vehicle-Traffic-Control"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

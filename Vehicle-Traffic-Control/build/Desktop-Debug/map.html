@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Offline Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    html, body, #map { height: 100%; margin: 0; }
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+      background: white;
+      padding: 5px;
+      border-radius: 4px;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <label><input type="checkbox" id="offlineToggle" /> Offline Mode</label>
+  </div>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const map = L.map('map').setView([57.0228004, 9.9030888], 13);
+
+  const onlineLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data © OpenStreetMap contributors',
+    subdomains: 'abc',
+    maxZoom: 18,
+    minZoom: 13
+  });
+
+  const offlineLayer = L.tileLayer('tiles/{z}/{x}/{y}.png', {
+    attribution: 'Offline tiles',
+    maxZoom: 18,
+    minZoom: 13,
+    errorTileUrl: 'tiles/empty.png'
+  });
+
+  onlineLayer.addTo(map);
+  const marker = L.marker([57.0228004, 9.9030888]).addTo(map);
+
+  window.setView = function(lat, lon) {
+    map.setView([lat, lon], 13);
+    marker.setLatLng([lat, lon]);
+  };
+
+  window.toggleOffline = function(enabled) {
+    map.eachLayer(function(layer) {
+      map.removeLayer(layer);
+    });
+    if (enabled) {
+      offlineLayer.addTo(map);
+    } else {
+      onlineLayer.addTo(map);
+    }
+    marker.addTo(map);
+  };
+
+  offlineLayer.on('tileerror', function(e) {
+    console.log('Missing offline tile:', e.tile.src);
+  });
+});
+</script>
+
+</body>
+</html>
