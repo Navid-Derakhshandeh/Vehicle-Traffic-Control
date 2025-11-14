@@ -1,0 +1,5 @@
+/home/navid/MarbleGlobe/build/Desktop-Debug/CMakeFiles/Vehicle-Traffic-Map.dir
+/home/navid/MarbleGlobe/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/navid/MarbleGlobe/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/navid/MarbleGlobe/build/Desktop-Debug/CMakeFiles/Vehicle-Traffic-Map_autogen_timestamp_deps.dir
+/home/navid/MarbleGlobe/build/Desktop-Debug/CMakeFiles/Vehicle-Traffic-Map_autogen.dir

@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/data">
+    <file>camera.kml</file>
+  </qresource>
+  <qresource prefix="/icons">
+    <file>data/icons/camera.png</file>
+  </qresource>
+</RCC>
+

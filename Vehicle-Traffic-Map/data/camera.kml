@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Style id="cameraStyle">
+      <IconStyle>
+        <scale>2.0</scale>
+        <Icon>
+<href>:/camera.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>camera</name>
+      <styleUrl>#cameraStyle</styleUrl>
+      <Point>
+<coordinates>9.903089,57.022800</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
+
